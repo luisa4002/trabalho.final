@@ -13,7 +13,8 @@ body {
     font-family: 'Inter', Arial, sans-serif;
 }
 
-/* Parte inicial */
+/* PARTE INICIAL */
+
 .principal {
     background-image: url("Background.png");
     background-size: cover;
@@ -26,13 +27,14 @@ body {
     padding: 0 40px;
 }
 
-.principal__conteudo {
+.principal2 {
     width: 588px;
     min-width: 0;
     text-align: center;
 }
 
-/* Título */
+/* Título inicial */
+
 .principal h1 {
     width: 588px;
     height: 102px;
@@ -46,6 +48,7 @@ body {
 }
 
 /* Logo Combo+ */
+
 .logo-combo {
     width: 348px;
     height: 104px;
@@ -55,6 +58,7 @@ body {
 }
 
 /* Botões */
+
 .botao {
     width: 512px;
     height: 56px;
@@ -74,18 +78,21 @@ body {
 }
 
 /* Botão azul */
+
 .botao--azul {
     background: #167BF7;
     border: 1px solid #167BF7;
 }
 
 /* Botão com contorno */
+
 .botao--contorno {
     border: 1px solid white;
     background: transparent;
 }
 
 /* Aviso sobre o preço */
+
 .aviso {
     width: 380px;
     height: 15px;
@@ -103,50 +110,25 @@ body {
     white-space: nowrap;
 }
 
-/* Seções da página */
+/* CONFIGURAÇÃO GERAL DAS SEÇÕES */
+
 .secao {
-    min-height: 430px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5%;
-    padding: 5% 10%;
 }
 
-.secao__texto {
-    max-width: 470px;
-    flex: 1;
-}
+/* =====================================
+   PRIMEIRA SEÇÃO - ASSISTA DO SEU JEITO
+===================================== */
 
-.secao__texto h2 {
-    width: 588px;
-    height: 58px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: 0;
-}
-
-.secao__texto p {
-    width: 588px;
-    height: 48px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0;
-    opacity: 0.8;
-}
-
-/* Seção Plataforma */
 .secao--tv {
     width: 100%;
     max-width: 1155px;
-    min-height: 560px;
+    min-height: 655px;
     margin: 0 auto;
     padding: 95px 0 0;
-
     display: grid;
     grid-template-columns: 498px 588px;
     column-gap: 69px;
@@ -154,7 +136,6 @@ body {
     justify-content: center;
 }
 
-/* Imagem do computador e celular */
 .secao--tv .imagem-plataforma {
     width: 498px;
     height: 560px;
@@ -162,11 +143,9 @@ body {
     opacity: 1;
 }
 
-/* Texto da seção Plataforma */
 .secao--tv .secao__texto {
     width: 588px;
     max-width: 588px;
-    flex: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -193,7 +172,10 @@ body {
     opacity: 0.8;
 }
 
-/* Seção Combo+ */
+/* =====================================
+   SEGUNDA SEÇÃO - COMBO+
+===================================== */
+
 .secao--combo {
     width: 100%;
     min-height: 430px;
@@ -205,13 +187,11 @@ body {
     padding: 65px 0;
 }
 
-/* Texto Combo+ */
 .secao--combo .secao-texto {
     width: 588px;
     max-width: 588px;
 }
 
-/* Parágrafo Combo+ */
 .secao--combo .secao-texto p {
     width: 588px;
     height: 72px;
@@ -223,7 +203,8 @@ body {
     opacity: 0.8;
 }
 
-/* Botão Combo+ */
+/* Botão da seção Combo+ */
+
 .secao--combo .botao--curto {
     width: 162.68px;
     height: 56px;
@@ -238,7 +219,8 @@ body {
     border: 1px solid #167BF7;
 }
 
-/* Imagem das janelas */
+/* Imagem da seção Combo+ */
+
 .secao--combo .imagem-idiomas {
     width: 496px;
     height: 338.96px;
@@ -247,99 +229,204 @@ body {
     opacity: 1;
 }
 
-/* Imagens das demais seções */
-.imagem-plataforma,
-.imagem-idiomas,
-.imagem-notebook {
-    height: auto;
+/* =====================================
+   TERCEIRA SEÇÃO - BAIXE SEUS CURSOS
+===================================== */
+
+.secao--download {
+    width: 100%;
+    min-height: 454px;
+    display: grid;
+    grid-template-columns: 547px 588px;
+    column-gap: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 0;
 }
 
-.imagem-idiomas,
-.imagem-notebook {
-    max-width: 560px;
-}
-
-/* Botão curto */
-.botao--curto {
-    display: inline-block;
-    width: auto;
-    margin-top: 18px;
-}
-
-/* Seção Download */
 .secao--download .imagem-notebook {
-    max-width: 560px;
+    width: 547px;
+    height: 324px;
+    object-fit: contain;
+    opacity: 1;
 }
 
-/* Dispositivos */
-.dispositivos {
-    text-align: center;
-    padding: 75px 5% 55px;
+.secao--download .secao__texto {
+    width: 588px;
+    max-width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.secao--download .secao__texto h2 {
+    width: 588px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.secao--download .secao__texto p {
+    width: 588px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+/* =====================================
+   DISPOSITIVOS FAVORITOS
+===================================== */
+
+.dispositivos {
+    width: 100%;
+    text-align: center;
+    padding: 75px 0 55px;
+}
+
+/* Título */
 
 .dispositivos h2 {
-    margin-bottom: 42px;
+    width: 985px;
+    max-width: 100%;
+    height: 58px;
+    margin: 0 auto 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    opacity: 1;
 }
 
+/* Lista de dispositivos */
+
 .dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    gap: 7%;
+    width: 1154px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 339px);
+    justify-content: space-between;
     list-style: none;
 }
 
+/* Cada dispositivo */
+
 .dispositivos__lista li {
-    width: 210px;
+    width: 339px;
+    text-align: center;
 }
+
+/* Imagens */
 
 .dispositivos__lista img {
-    width: 100%;
-    height: 115px;
+    display: block;
+    width: 339px;
+    height: 192px;
     object-fit: contain;
+    opacity: 1;
 }
+
+/* Nomes dos dispositivos */
 
 .dispositivos__lista h3 {
-    margin-top: 18px;
-    font-size: 18px;
+    width: 100%;
+    height: 38px;
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+    opacity: 1;
 }
 
-/* Rodapé */
+/* =====================================
+   RODAPÉ
+===================================== */
+
 .rodape {
+    width: 100%;
     text-align: center;
-    padding: 25px 8% 35px;
+    padding: 45px 0 35px;
     color: #c0c0c0;
-    font-size: 11px;
-    line-height: 1.6;
 }
+
+/* Logo TecLeo */
 
 .rodape > img {
-    width: 110px;
-    margin-bottom: 22px;
+    display: block;
+    width: 156px;
+    height: 39px;
+    object-fit: contain;
+    margin: 0 auto 22px;
+    opacity: 1;
 }
+
+/* Links */
 
 .rodape__links {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 12px 18px;
-    margin-bottom: 18px;
+    margin: 0 auto 24px;
+    padding: 0 20px;
 }
 
 .rodape__links a {
     color: white;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Textos finais */
+
+.rodape p {
+    width: 1200px;
+    max-width: 90%;
+    min-height: 42px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 1;
 }
 
 .rodape p + p {
     margin-top: 8px;
 }
 
-/* Ajustes para telas menores */
+/* =====================================
+   TABLETS
+===================================== */
+
 @media (max-width: 1200px) {
 
     .secao--tv {
         padding: 65px 5%;
-        grid-template-columns: minmax(0, 498px) minmax(0, 588px);
+        grid-template-columns: minmax(0, 498fr) minmax(0, 588fr);
         column-gap: 4%;
     }
 
@@ -360,7 +447,7 @@ body {
 
     .secao--combo {
         padding: 65px 5%;
-        grid-template-columns: minmax(0, 588px) minmax(0, 496px);
+        grid-template-columns: minmax(0, 588fr) minmax(0, 496fr);
         column-gap: 4%;
     }
 
@@ -373,10 +460,77 @@ body {
         width: 100%;
         height: auto;
     }
+
+    .secao--download {
+        padding: 65px 5%;
+        grid-template-columns: minmax(0, 547fr) minmax(0, 588fr);
+        column-gap: 4%;
+    }
+
+    .secao--download .imagem-notebook {
+        width: 100%;
+        height: auto;
+    }
+
+    .secao--download .secao__texto {
+        width: 100%;
+        max-width: 588px;
+    }
+
+    .secao--download .secao__texto h2,
+    .secao--download .secao__texto p {
+        width: 100%;
+    }
+
+    /* Dispositivos */
+
+    .dispositivos {
+        padding: 65px 5% 45px;
+    }
+
+    .dispositivos h2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .dispositivos__lista {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .dispositivos__lista li,
+    .dispositivos__lista img {
+        width: 100%;
+    }
+
+    .dispositivos__lista img {
+        height: auto;
+        aspect-ratio: 339 / 192;
+    }
+
+    .dispositivos__lista h3 {
+        font-size: 26px;
+    }
+
+    /* Rodapé */
+
+    .rodape {
+        padding: 40px 5% 30px;
+    }
+
+    .rodape p {
+        width: 100%;
+    }
 }
 
-/* Celulares */
+/* =====================================
+   CELULARES
+===================================== */
+
 @media (max-width: 700px) {
+
+    /* Parte inicial */
 
     .principal {
         height: auto;
@@ -388,7 +542,7 @@ body {
         background-position: top center;
     }
 
-    .principal__conteudo {
+    .principal2 {
         width: 100%;
         min-width: 0;
     }
@@ -417,23 +571,19 @@ body {
         white-space: normal;
     }
 
-    .secao {
-        flex-direction: column;
-        text-align: center;
-        padding: 65px 8%;
-        gap: 28px;
-    }
+    /* Seções */
 
-    /* Plataforma no celular */
-    .secao--tv {
+    .secao--tv,
+    .secao--combo,
+    .secao--download {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        max-width: none;
         min-height: 0;
         padding: 65px 8%;
         gap: 28px;
     }
+
+    /* Primeira seção */
 
     .secao--tv .imagem-plataforma {
         width: 100%;
@@ -457,13 +607,7 @@ body {
         height: auto;
     }
 
-    /* Combo+ no celular */
-    .secao--combo {
-        display: flex;
-        flex-direction: column;
-        padding: 65px 8%;
-        gap: 28px;
-    }
+    /* Segunda seção */
 
     .secao--combo .secao-texto {
         width: 100%;
@@ -488,23 +632,92 @@ body {
         margin: 18px auto 0;
     }
 
-    /* Demais seções */
+    /* Terceira seção */
+
     .secao--download .imagem-notebook {
         width: 100%;
-        max-width: 500px;
+        max-width: 547px;
+        height: auto;
     }
+
+    .secao--download .secao__texto {
+        width: 100%;
+        max-width: 588px;
+    }
+
+    .secao--download .secao__texto h2 {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+    }
+
+    .secao--download .secao__texto p {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Dispositivos */
 
     .dispositivos {
         padding: 55px 6% 35px;
     }
 
+    .dispositivos h2 {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
     .dispositivos__lista {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 35px;
     }
 
+    .dispositivos__lista li {
+        width: 100%;
+        max-width: 339px;
+    }
+
+    .dispositivos__lista img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 339 / 192;
+    }
+
+    .dispositivos__lista h3 {
+        font-size: 26px;
+        height: auto;
+    }
+
+    /* Rodapé */
+
     .rodape {
-        padding: 25px 6%;
+        padding: 35px 6% 25px;
+    }
+
+    .rodape > img {
+        width: 156px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rodape__links {
+        gap: 12px 16px;
+        padding: 0;
+        margin-bottom: 22px;
+    }
+
+    .rodape__links a {
+        font-size: 14px;
+    }
+
+    .rodape p {
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        font-size: 12px;
     }
 }
