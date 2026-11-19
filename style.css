@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     padding: 5% 5.5%;
-    background-image: url("imagens/Background.png");
+    background-image: url("Background.png");
     background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
