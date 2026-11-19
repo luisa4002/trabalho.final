@@ -139,19 +139,119 @@ body {
     opacity: 0.8;
 }
 
-/* Imagens */
-.imagem-plataforma,
-.imagem-idiomas,
-.imagem-notebook {
-    width: 48%;
-    height: auto;
+/* Seção Plataforma */
+.secao--tv {
+    width: 100%;
+    max-width: 1155px;
+    min-height: 560px;
+    margin: 0 auto;
+    padding: 95px 0 0;
+
+    display: grid;
+    grid-template-columns: 498px 588px;
+    column-gap: 69px;
+    align-items: center;
+    justify-content: center;
 }
 
-.imagem-plataforma {
+/* Imagem do computador e celular */
+.secao--tv .imagem-plataforma {
     width: 498px;
     height: 560px;
     object-fit: contain;
     opacity: 1;
+}
+
+/* Texto da seção Plataforma */
+.secao--tv .secao__texto {
+    width: 588px;
+    max-width: 588px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.secao--tv .secao__texto h2 {
+    width: 588px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+
+.secao--tv .secao__texto p {
+    width: 588px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+/* Seção Combo+ */
+.secao--combo {
+    width: 100%;
+    min-height: 430px;
+    display: grid;
+    grid-template-columns: 588px 496px;
+    column-gap: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 65px 0;
+}
+
+/* Texto Combo+ */
+.secao--combo .secao-texto {
+    width: 588px;
+    max-width: 588px;
+}
+
+/* Parágrafo Combo+ */
+.secao--combo .secao-texto p {
+    width: 588px;
+    height: 72px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+/* Botão Combo+ */
+.secao--combo .botao--curto {
+    width: 162.68px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 16px;
+    margin: 16px 0 0;
+    border-radius: 8px;
+    background: #167BF7;
+    border: 1px solid #167BF7;
+}
+
+/* Imagem das janelas */
+.secao--combo .imagem-idiomas {
+    width: 496px;
+    height: 338.96px;
+    object-fit: contain;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+/* Imagens das demais seções */
+.imagem-plataforma,
+.imagem-idiomas,
+.imagem-notebook {
+    height: auto;
 }
 
 .imagem-idiomas,
@@ -159,10 +259,16 @@ body {
     max-width: 560px;
 }
 
+/* Botão curto */
 .botao--curto {
     display: inline-block;
     width: auto;
     margin-top: 18px;
+}
+
+/* Seção Download */
+.secao--download .imagem-notebook {
+    max-width: 560px;
 }
 
 /* Dispositivos */
@@ -228,6 +334,47 @@ body {
     margin-top: 8px;
 }
 
+/* Ajustes para telas menores */
+@media (max-width: 1200px) {
+
+    .secao--tv {
+        padding: 65px 5%;
+        grid-template-columns: minmax(0, 498px) minmax(0, 588px);
+        column-gap: 4%;
+    }
+
+    .secao--tv .imagem-plataforma {
+        width: 100%;
+        height: auto;
+    }
+
+    .secao--tv .secao__texto {
+        width: 100%;
+        max-width: 588px;
+    }
+
+    .secao--tv .secao__texto h2,
+    .secao--tv .secao__texto p {
+        width: 100%;
+    }
+
+    .secao--combo {
+        padding: 65px 5%;
+        grid-template-columns: minmax(0, 588px) minmax(0, 496px);
+        column-gap: 4%;
+    }
+
+    .secao--combo .secao-texto,
+    .secao--combo .secao-texto p {
+        width: 100%;
+    }
+
+    .secao--combo .imagem-idiomas {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Celulares */
 @media (max-width: 700px) {
 
@@ -277,17 +424,72 @@ body {
         gap: 28px;
     }
 
-    .secao--combo .secao__texto {
+    /* Plataforma no celular */
+    .secao--tv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        min-height: 0;
+        padding: 65px 8%;
+        gap: 28px;
+    }
+
+    .secao--tv .imagem-plataforma {
+        width: 100%;
+        max-width: 498px;
+        height: auto;
+    }
+
+    .secao--tv .secao__texto {
+        width: 100%;
+        max-width: 588px;
+    }
+
+    .secao--tv .secao__texto h2 {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+    }
+
+    .secao--tv .secao__texto p {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Combo+ no celular */
+    .secao--combo {
+        display: flex;
+        flex-direction: column;
+        padding: 65px 8%;
+        gap: 28px;
+    }
+
+    .secao--combo .secao-texto {
+        width: 100%;
+        max-width: 588px;
         order: 2;
+        text-align: center;
+    }
+
+    .secao--combo .secao-texto p {
+        width: 100%;
+        height: auto;
     }
 
     .secao--combo .imagem-idiomas {
+        width: 100%;
+        max-width: 496px;
+        height: auto;
         order: 1;
     }
 
-    .imagem-plataforma,
-    .imagem-idiomas,
-    .imagem-notebook {
+    .secao--combo .botao--curto {
+        margin: 18px auto 0;
+    }
+
+    /* Demais seções */
+    .secao--download .imagem-notebook {
         width: 100%;
         max-width: 500px;
     }
