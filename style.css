@@ -32,6 +32,7 @@ body {
     text-align: center;
 }
 
+/* Título */
 .principal h1 {
     width: 588px;
     height: 102px;
@@ -44,6 +45,7 @@ body {
     margin-bottom: 18px;
 }
 
+/* Logo Combo+ */
 .logo-combo {
     width: 348px;
     height: 104px;
@@ -52,6 +54,7 @@ body {
     object-fit: contain;
 }
 
+/* Botões */
 .botao {
     width: 512px;
     height: 56px;
@@ -63,20 +66,26 @@ body {
     margin: 0 auto 12px;
     color: white;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     border-radius: 8px;
+    cursor: pointer;
 }
 
+/* Botão azul */
 .botao--azul {
     background: #167BF7;
     border: 1px solid #167BF7;
 }
 
+/* Botão com contorno */
 .botao--contorno {
     border: 1px solid white;
     background: transparent;
 }
 
+/* Aviso sobre o preço */
 .aviso {
     width: 380px;
     height: 15px;
@@ -88,6 +97,10 @@ body {
     line-height: 100%;
     letter-spacing: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 /* Seções da página */
@@ -237,11 +250,13 @@ body {
         width: 100%;
         height: auto;
         font-size: 20px;
+        margin-bottom: 18px;
     }
 
     .logo-combo {
         max-width: 280px;
         width: 100%;
+        height: auto;
     }
 
     .botao {
@@ -252,6 +267,7 @@ body {
     .aviso {
         width: 100%;
         height: auto;
+        white-space: normal;
     }
 
     .secao {
